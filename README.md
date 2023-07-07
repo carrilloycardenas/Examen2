@@ -1,4 +1,4 @@
-Encuesta Cine App
+# Encuesta Cine App
 
 ¡Bienvenido al repositorio de la aplicación Encuesta Cine! Este proyecto es parte del examen para la materia de Desarrollo Móvil y tiene como objetivo simular el desarrollo de una aplicación móvil para facilitar la realización de encuestas digitales en un cine.
 Descripción
@@ -12,7 +12,7 @@ Tecnologías y lenguajes utilizados
 
     XML: XML se empleará para describir la estructura y el diseño de la interfaz de usuario de la aplicación Encuesta Cine. Con XML, es posible definir la apariencia de los elementos de la interfaz y su disposición en la pantalla.
 
-Características y funcionalidades
+## Características y funcionalidades
 
 La aplicación Encuesta Cine contará con las siguientes características y funcionalidades:
 
@@ -26,7 +26,7 @@ La aplicación Encuesta Cine contará con las siguientes características y func
 
     Interfaz de usuario intuitiva: Se diseñará una interfaz de usuario amigable y atractiva, con el objetivo de brindar una experiencia agradable y fácil de usar para los usuarios.
 
-Instrucciones de uso
+## Instrucciones de uso
 
     Descarga e instala Android Studio desde el sitio web oficial de desarrolladores de Android.
 
@@ -40,6 +40,6 @@ Instrucciones de uso
 
     Explora las funcionalidades de la aplicación y realiza pruebas según sea necesario.
 
-Contribución
+## Contribución
 
 ¡Agradecemos tu interés en contribuir al desarrollo de la aplicación Encuesta Cine! Si deseas realizar mejoras o corregir problemas, te invitamos a seguir los pasos mencionados en el apartado de contribución del "ReadMe".
