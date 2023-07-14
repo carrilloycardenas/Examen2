@@ -40,7 +40,7 @@ public class Resumen extends AppCompatActivity {
                 + "\nBuena: " + contarRespuestaPregunta1("Buena", "atencion")
                 + "\nExcelente: " + contarRespuestaPregunta1("Excenlente", "atencion")
         );
-        resumen.add("Califique el nivel de higiene en baños y salas \nMala: " + contarRespuestaPregunta1("Mala", "higiene")
+        resumen.add("Califique el nivel de higiene en baños y salas \nMala: " + contarRespuestaPregunta1("Malo", "higiene")
                 + "\nRegular: " + contarRespuestaPregunta1("Regular", "higiene")
                 + "\nBuena: " + contarRespuestaPregunta1("Buena", "higiene")
                 + "\nExcelente: " + contarRespuestaPregunta1("Excenlente", "higiene")
