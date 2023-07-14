@@ -131,5 +131,9 @@ public class Encuesta extends AppCompatActivity {
         radioGroup.clearCheck();
     }
 
+    public void salir(View view){
+        finish();
+    }
+
 
 }

@@ -27,7 +27,7 @@ public class Resumen extends AppCompatActivity {
 
 
         resumen.add("¿Con que frecuencia acudes al cine? \n1 vez al mes: " + contarRespuestaPregunta1("1 vez al mes", "frecuencia")
-                    + "\n1 vez a la semana: " + contarRespuestaPregunta1("1 vez a la semana", "frecuencia")
+                    + "\n1 vez a la semana: " + contarRespuestaPregunta1("1 vez cada semana", "frecuencia")
                     + "\nMás de una vez a la semana: " + contarRespuestaPregunta1("Más de una vez a la semana", "frecuencia")
                     + "\nCasi nunca: " + contarRespuestaPregunta1("Casi nunca", "frecuencia")
         );
@@ -39,7 +39,7 @@ public class Resumen extends AppCompatActivity {
         resumen.add("Califique la atención del personal antes, duerante y después de la función \nMala: " + contarRespuestaPregunta1("Mala", "atencion")
                 + "\nRegular: " + contarRespuestaPregunta1("Regular", "atencion")
                 + "\nBuena: " + contarRespuestaPregunta1("Buena", "atencion")
-                + "\nExcelente: " + contarRespuestaPregunta1("Excenlente", "atencion")
+                + "\nExcelente: " + contarRespuestaPregunta1("Excelente", "atencion")
         );
         resumen.add("Califique el nivel de higiene en baños y salas \nMala: " + contarRespuestaPregunta1("Malo", "higiene")
                 + "\nRegular: " + contarRespuestaPregunta1("Regular", "higiene")
