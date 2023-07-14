@@ -43,8 +43,8 @@ public class Resumen extends AppCompatActivity {
         );
         resumen.add("Califique el nivel de higiene en baños y salas \nMala: " + contarRespuestaPregunta1("Malo", "higiene")
                 + "\nRegular: " + contarRespuestaPregunta1("Regular", "higiene")
-                + "\nBuena: " + contarRespuestaPregunta1("Buena", "higiene")
-                + "\nExcelente: " + contarRespuestaPregunta1("Excenlente", "higiene")
+                + "\nBuena: " + contarRespuestaPregunta1("Bueno", "higiene")
+                + "\nExcelente: " + contarRespuestaPregunta1("Excelente", "higiene")
         );
         resumen.add("¿Qué tipo de sala prefiere? \n3D: " + contarRespuestaPregunta1("3D", "sala")
                 + "\nSala tradicional: " + contarRespuestaPregunta1("Sala tradicional", "sala")
