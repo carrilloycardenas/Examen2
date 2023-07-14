@@ -28,26 +28,24 @@ public class Encuesta extends AppCompatActivity {
         RadioGroupHigiene = findViewById(R.id.RadioGroupHigiene);
         RadioGroupSala = findViewById(R.id.RadioGroupSala);
         btnP1op1 = findViewById(R.id.btnP1op1);
-        btnP1op2 = findViewById(R.id.btnP1op1);
-        btnP1op3 = findViewById(R.id.btnP1op1);
-        btnP1op4 = findViewById(R.id.btnP1op1);
-        btnP2op1 = findViewById(R.id.btnP1op1);
-        btnP2op2 = findViewById(R.id.btnP1op1);
-        btnP2op3 = findViewById(R.id.btnP1op1);
-        btnP2op4 = findViewById(R.id.btnP1op1);
-        btnP3op1 = findViewById(R.id.btnP1op1);
-        btnP3op2 = findViewById(R.id.btnP1op1);
-        btnP3op3 = findViewById(R.id.btnP1op1);
-        btnP3op4 = findViewById(R.id.btnP1op1);
-        btnP4op1 = findViewById(R.id.btnP1op1);
-        btnP4op2 = findViewById(R.id.btnP1op1);
-        btnP4op3 = findViewById(R.id.btnP1op1);
-        btnP4op4 = findViewById(R.id.btnP1op1);
-        btnP5op1 = findViewById(R.id.btnP1op1);
-        btnP5op2 = findViewById(R.id.btnP1op1);
-        btnP5op3 = findViewById(R.id.btnP1op1);
-        btnP5op4 = findViewById(R.id.btnP1op1);
-
+        btnP1op2 = findViewById(R.id.btnP1op2);
+        btnP1op3 = findViewById(R.id.btnP1op3);
+        btnP1op4 = findViewById(R.id.btnP1op4);
+        btnP2op1 = findViewById(R.id.btnP2op1);
+        btnP2op2 = findViewById(R.id.btnP2op2);
+        btnP2op3 = findViewById(R.id.btnP2op3);
+        btnP2op4 = findViewById(R.id.btnP2op4);
+        btnP3op1 = findViewById(R.id.btnP3op1);
+        btnP3op2 = findViewById(R.id.btnP3op2);
+        btnP3op3 = findViewById(R.id.btnP3op3);
+        btnP3op4 = findViewById(R.id.btnP3op4);
+        btnP4op1 = findViewById(R.id.btnP4op1);
+        btnP4op2 = findViewById(R.id.btnP4op2);
+        btnP4op3 = findViewById(R.id.btnP4op3);
+        btnP4op4 = findViewById(R.id.btnP4op4);
+        btnP5op1 = findViewById(R.id.btnP5op1);
+        btnP5op2 = findViewById(R.id.btnP5op2);
+        btnP5op3 = findViewById(R.id.btnP5op3);
     }
 
     public void save(View view){
@@ -105,8 +103,6 @@ public class Encuesta extends AppCompatActivity {
                 registro.put("sala", btnP5op2.getText().toString());
             } else if(btnP5op3.isChecked()){
                 registro.put("sala", btnP5op3.getText().toString());
-            } else if(btnP5op4.isChecked()){
-                registro.put("sala", btnP5op4.getText().toString());
             }
 
             db.insert("encuesta", null, registro);

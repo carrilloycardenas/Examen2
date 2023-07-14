@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -40,6 +41,7 @@ public class Resultados extends AppCompatActivity {
                 String higiene = tabla.getString(tabla.getColumnIndexOrThrow("higiene"));
                 String sala = tabla.getString(tabla.getColumnIndexOrThrow("sala"));
                 p1.add("Pregunta 1: " + frecuencia + "\nPregunta 2: " + calidad + "\nPregunta 3: " + atencion + "\nPregunta 4: " + higiene + "\nPregunta 5: " + sala);
+                Log.d("String respuestas", String.valueOf(p1));
                 //p2.add(calidad);
                 //p3.add(atencion);
                 //p4.add(higiene);
