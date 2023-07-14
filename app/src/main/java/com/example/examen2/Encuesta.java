@@ -55,7 +55,7 @@ public class Encuesta extends AppCompatActivity {
         SQLiteDatabase db = admin.getWritableDatabase();
 
         // Evaluar que todas las preguntas se encuentren contestadas
-        if(RadioGroupFrecuencia.isSelected() && RadioGroupCalidad.isSelected() && RadioGroupAtencion.isSelected() && RadioGroupHigiene.isSelected() && RadioGroupSala.isSelected()){
+        if(RadioGroupFrecuencia.getCheckedRadioButtonId() != -1 && RadioGroupCalidad.getCheckedRadioButtonId() != -1 && RadioGroupAtencion.getCheckedRadioButtonId() != -1 && RadioGroupHigiene.getCheckedRadioButtonId() != -1 && RadioGroupSala.getCheckedRadioButtonId() != -1){
             ContentValues registro = new ContentValues();
             //registro.put("frecuencia", RadioGroupFrecuencia.);
             // Registro de primer respuesta
