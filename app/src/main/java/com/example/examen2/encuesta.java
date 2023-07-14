@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class encuesta extends AppCompatActivity {
 
@@ -53,11 +54,68 @@ public class encuesta extends AppCompatActivity {
         SQLiteOpenHelper admin = new AdminSQLiteHelper(this, "encuesta", null, 1);
         SQLiteDatabase db = admin.getWritableDatabase();
 
+        // Evaluar que todas las preguntas se encuentren contestadas
         if(RadioGroupFrecuencia.isSelected() && RadioGroupCalidad.isSelected() && RadioGroupAtencion.isSelected() && RadioGroupHigiene.isSelected() && RadioGroupSala.isSelected()){
             ContentValues registro = new ContentValues();
             //registro.put("frecuencia", RadioGroupFrecuencia.);
-        } else {
+            // Registro de primer respuesta
+            if(btnP1op1.isChecked()){
+                registro.put("frecuencia", btnP1op1.getText().toString());
+            } else if(btnP1op2.isChecked()){
+                registro.put("frecuencia", btnP1op2.getText().toString());
+            } else if(btnP1op3.isChecked()){
+                registro.put("frecuencia", btnP1op3.getText().toString());
+            } else if(btnP1op4.isChecked()){
+                registro.put("frecuencia", btnP1op4.getText().toString());
+            }
+            // Registro de segunda respuesta
+            if(btnP2op1.isChecked()){
+                registro.put("calidad", btnP2op1.getText().toString());
+            } else if(btnP2op2.isChecked()){
+                registro.put("calidad", btnP2op2.getText().toString());
+            } else if(btnP2op3.isChecked()){
+                registro.put("calidad", btnP2op3.getText().toString());
+            } else if(btnP2op4.isChecked()){
+                registro.put("calidad", btnP2op4.getText().toString());
+            }
+            // Registro de tercer respuesta
+            if(btnP3op1.isChecked()){
+                registro.put("atencion", btnP3op1.getText().toString());
+            } else if(btnP3op2.isChecked()){
+                registro.put("atencion", btnP3op2.getText().toString());
+            } else if(btnP3op3.isChecked()){
+                registro.put("atencion", btnP3op3.getText().toString());
+            } else if(btnP3op4.isChecked()){
+                registro.put("atencion", btnP3op4.getText().toString());
+            }
+            // Registro de cuarta respuesta
+            if(btnP4op1.isChecked()){
+                registro.put("higiene", btnP4op1.getText().toString());
+            } else if(btnP4op2.isChecked()){
+                registro.put("higiene", btnP4op2.getText().toString());
+            } else if(btnP4op3.isChecked()){
+                registro.put("higiene", btnP4op3.getText().toString());
+            } else if(btnP4op4.isChecked()){
+                registro.put("higiene", btnP4op4.getText().toString());
+            }
+            // Registro de quinta respuesta
+            if(btnP5op1.isChecked()){
+                registro.put("sala", btnP5op1.getText().toString());
+            } else if(btnP5op2.isChecked()){
+                registro.put("sala", btnP5op2.getText().toString());
+            } else if(btnP5op3.isChecked()){
+                registro.put("sala", btnP5op3.getText().toString());
+            } else if(btnP5op4.isChecked()){
+                registro.put("sala", btnP5op4.getText().toString());
+            }
 
+            db.insert("encuesta", null, registro);
+            db.close();
+
+            Toast.makeText(this, "Encuesta Registrada", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Encuesta Incompleta", Toast.LENGTH_SHORT).show();
         }
     }
 }
