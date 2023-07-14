@@ -110,8 +110,26 @@ public class Encuesta extends AppCompatActivity {
 
             Toast.makeText(this, "Encuesta Registrada", Toast.LENGTH_SHORT).show();
 
+            RadioGroup radioGroupFrecuencia = findViewById(R.id.RadioGroupFrecuencia);
+            RadioGroup radioGroupCalidad = findViewById(R.id.RadioGroupCalidad);
+            RadioGroup radioGroupAtencion = findViewById(R.id.RadioGroupAtencion);
+            RadioGroup radioGroupHigiene = findViewById(R.id.RadioGroupHigiene);
+            RadioGroup radioGroupSala = findViewById(R.id.RadioGroupSala);
+
+            limpiarRadioGroup(radioGroupFrecuencia);
+            limpiarRadioGroup(radioGroupCalidad);
+            limpiarRadioGroup(radioGroupAtencion);
+            limpiarRadioGroup(radioGroupHigiene);
+            limpiarRadioGroup(radioGroupSala);
+
         } else {
             Toast.makeText(this, "Encuesta Incompleta", Toast.LENGTH_SHORT).show();
         }
     }
+
+    private void limpiarRadioGroup(RadioGroup radioGroup) {
+        radioGroup.clearCheck();
+    }
+
+
 }
