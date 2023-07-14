@@ -13,13 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void Encuesta(View view){
-        Intent intent = new Intent(this, encuesta.class);
+
+    public void OpenEncuesta(View view){
+        Intent intent = new Intent(this, Encuesta.class);
         startActivity(intent);
     }
 
-    public void Resultados(View view){
-        Intent intent = new Intent(this, resultados.class);
+    public void OpenResultados(View view){
+        Intent intent = new Intent(this, Resultados.class);
         startActivity(intent);
     }
 }

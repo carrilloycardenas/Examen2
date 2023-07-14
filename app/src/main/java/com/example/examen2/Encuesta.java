@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class encuesta extends AppCompatActivity {
+public class Encuesta extends AppCompatActivity {
 
     RadioGroup RadioGroupFrecuencia, RadioGroupCalidad, RadioGroupAtencion, RadioGroupHigiene, RadioGroupSala;
     RadioButton btnP1op1, btnP1op2, btnP1op3, btnP1op4, btnP2op1, btnP2op2, btnP2op3, btnP2op4,

@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class resultados extends AppCompatActivity {
+public class Resultados extends AppCompatActivity {
 
     ListView list1;
 
