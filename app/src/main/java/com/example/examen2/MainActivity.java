@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Resultados.class);
         startActivity(intent);
     }
+
+    public void OpenResumen(View view){
+        Intent intent = new Intent(this, Resumen.class);
+        startActivity(intent);
+    }
 }
