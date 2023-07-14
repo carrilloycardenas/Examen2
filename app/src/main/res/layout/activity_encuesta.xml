@@ -33,6 +33,7 @@
                 android:textSize="16sp" />
 
             <RadioGroup
+                android:id="@+id/RadioGroupFrecuencia"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -69,6 +70,7 @@
                 android:textSize="16sp" />
 
             <RadioGroup
+                android:id="@+id/RadioGroupCalidad"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -105,6 +107,7 @@
                 android:textSize="16sp" />
 
             <RadioGroup
+                android:id="@+id/RadioGroupAtencion"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -141,8 +144,9 @@
                 android:textSize="16sp" />
 
             <RadioGroup
+                android:id="@+id/RadioGroupHigiene"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <RadioButton
                     android:id="@+id/btnP4op1"
@@ -176,6 +180,7 @@
                     android:textSize="16sp" />
 
                 <RadioGroup
+                    android:id="@+id/RadioGroupSala"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
