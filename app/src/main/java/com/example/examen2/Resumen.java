@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -72,6 +73,9 @@ public class Resumen extends AppCompatActivity {
         db.close();
 
         return count;
+    }
+    public void salir(View view){
+        finish();
     }
 
 }

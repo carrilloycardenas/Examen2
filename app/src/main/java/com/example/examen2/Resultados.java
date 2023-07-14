@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -54,5 +55,9 @@ public class Resultados extends AppCompatActivity {
 
         //ArrayAdapter adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1,p1);
         //list1.setAdapter(adaptador);
+    }
+
+    public void salir(View view){
+        finish();
     }
 }

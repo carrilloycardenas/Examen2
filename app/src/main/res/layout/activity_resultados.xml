@@ -15,6 +15,7 @@
         android:layout_marginEnd="110dp"
         android:layout_marginBottom="8dp"
         android:text="Salir"
+        android:onClick="salir"
         android:textSize="16sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
